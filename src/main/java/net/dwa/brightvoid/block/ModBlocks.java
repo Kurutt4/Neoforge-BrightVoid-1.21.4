@@ -2,14 +2,19 @@ package net.dwa.brightvoid.block;
 
 import net.dwa.brightvoid.BrightVoid;
 import net.dwa.brightvoid.item.ModItems;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Function;
+
+import static net.dwa.brightvoid.item.ModItems.ITEMS;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(BrightVoid.MOD_ID);
@@ -98,8 +103,9 @@ public class ModBlocks {
     }
 
     private static <B extends Block> void registerBlockItem(String name, DeferredBlock<B> block) {
-        ModItems.ITEMS.registerSimpleBlockItem(name, block);
+        ITEMS.registerSimpleBlockItem(name, block);
     }
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

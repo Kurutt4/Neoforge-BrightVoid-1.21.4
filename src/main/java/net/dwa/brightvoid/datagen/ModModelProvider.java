@@ -48,6 +48,14 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected Stream<? extends Holder<Item>> getKnownItems() {
-        return ModItems.ITEMS.getEntries().stream();
+        return Stream.concat(
+                ModItems.ITEMS.getEntries().stream(),
+                ModBlocks.BLOCKS.getEntries().stream().map(entry -> ModItems.ITEMS.getEntries().stream()
+                        .filter(item -> item.getId().getPath().equals(entry.getId().getPath()))
+                        .findFirst()
+                        .orElseThrow(() -> new RuntimeException("Item para o bloco " + entry.getId().getPath() + " não encontrado!"))
+                )
+        );
     }
+
 }

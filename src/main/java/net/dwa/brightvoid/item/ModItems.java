@@ -2,7 +2,9 @@ package net.dwa.brightvoid.item;
 
 import net.dwa.brightvoid.BrightVoid;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -17,7 +19,9 @@ public class ModItems {
 
 
 
-
+    public static <B extends Block> DeferredItem<Item> registerSimpleBlockItem(String name, DeferredBlock<B> block) {
+        return ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
