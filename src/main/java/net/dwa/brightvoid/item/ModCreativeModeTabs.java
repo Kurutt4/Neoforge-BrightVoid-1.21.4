@@ -18,12 +18,11 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BrightVoid.MOD_ID);
 
     public static final Supplier<CreativeModeTab> BRIGHT_VOID_TAB = CREATIVE_MODE_TAB.register("bright_void_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.BEDROCK))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MAGNETITE.get()))
                     .title(Component.translatable("creativetab.brightvoid.brightvoid_items"))
                     .displayItems((parameters, output) -> {
-                       // output.accept(ModItems.MAGNETITE);
+                        output.accept(ModItems.MAGNETITE);
                         output.accept(ModItems.STAR_FRAGMENT);
-                       // output.accept(ModItems.MAGNETITE);
 
 
                         output.accept(ModBlocks.MOON_STONE.get());

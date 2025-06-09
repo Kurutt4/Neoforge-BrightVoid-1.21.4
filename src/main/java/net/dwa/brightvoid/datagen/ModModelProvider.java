@@ -6,15 +6,7 @@ import net.dwa.brightvoid.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
-import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
-import net.minecraft.client.data.models.model.ItemModelUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TexturedModel;
-import net.minecraft.client.renderer.item.ClientItem;
-import net.minecraft.client.renderer.item.ConditionalItemModel;
-import net.minecraft.client.renderer.item.ItemModel;
-import net.minecraft.client.renderer.item.properties.conditional.HasComponent;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
@@ -29,8 +21,9 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-      //  itemModels.generateFlatItem(ModItems.MAGNETITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.STAR_FRAGMENT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.MAGNETITE.get(), ModelTemplates.FLAT_ITEM);
+
 
         /* BLOCKS */
         blockModels.createTrivialCube(ModBlocks.METEOR_BLOCK.get());
@@ -43,17 +36,18 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.MOON_REDSTONE_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_DIAMOND_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_EMERALD_ORE.get());
+
+
+
     }
 
     @Override
     protected Stream<? extends Holder<Block>> getKnownBlocks() {
-
-        return Stream.empty();
+        return ModBlocks.BLOCKS.getEntries().stream();
     }
 
     @Override
     protected Stream<? extends Holder<Item>> getKnownItems() {
-
-        return Stream.empty();
+        return ModItems.ITEMS.getEntries().stream();
     }
 }
