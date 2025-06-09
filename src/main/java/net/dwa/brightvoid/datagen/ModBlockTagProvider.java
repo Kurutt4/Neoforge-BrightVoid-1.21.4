@@ -25,7 +25,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MOON_REDSTONE_ORE.get())
                 .add(ModBlocks.MOON_DIAMOND_ORE.get())
                 .add(ModBlocks.MOON_EMERALD_ORE.get())
-                .add(ModBlocks.MOON_LAPIS_LAZULI_ORE.get())
+                .add(ModBlocks.MOON_LAPIS_ORE.get())
                 .add(ModBlocks.METEOR_BLOCK.get());
 
 

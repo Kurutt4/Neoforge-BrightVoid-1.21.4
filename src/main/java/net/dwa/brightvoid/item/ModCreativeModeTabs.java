@@ -34,7 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MOON_REDSTONE_ORE.get());
                         output.accept(ModBlocks.MOON_DIAMOND_ORE.get());
                         output.accept(ModBlocks.MOON_EMERALD_ORE.get());
-                        output.accept(ModBlocks.MOON_LAPIS_LAZULI_ORE.get());
+                        output.accept(ModBlocks.MOON_LAPIS_ORE.get());
                         output.accept(ModBlocks.METEOR_BLOCK.get());
 
                     }).build());

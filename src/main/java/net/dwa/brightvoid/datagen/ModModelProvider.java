@@ -36,6 +36,7 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.MOON_REDSTONE_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_DIAMOND_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_EMERALD_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.MOON_LAPIS_ORE.get());
 
 
 

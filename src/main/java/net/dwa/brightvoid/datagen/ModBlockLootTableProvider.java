@@ -45,8 +45,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.MOON_DIAMOND_ORE.get(), Items.DIAMOND, 1, 3));
         add(ModBlocks.MOON_EMERALD_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.MOON_EMERALD_ORE.get(), Items.EMERALD, 1, 2));
-        add(ModBlocks.MOON_LAPIS_LAZULI_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.MOON_LAPIS_LAZULI_ORE.get(), Items.LAPIS_LAZULI, 2, 5));
+        add(ModBlocks.MOON_LAPIS_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.MOON_LAPIS_ORE.get(), Items.LAPIS_LAZULI, 2, 5));
         add(ModBlocks.METEOR_BLOCK.get(),
                block -> createMultipleOreDrops(ModBlocks.METEOR_BLOCK.get(), ModItems.MAGNETITE.get(), 1, 3));
     }

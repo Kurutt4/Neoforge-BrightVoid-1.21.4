@@ -75,8 +75,8 @@ public class ModBlocks {
                     .strength(4f)
                     .sound(SoundType.STONE));
 
-    public static final DeferredBlock<Block> MOON_LAPIS_LAZULI_ORE  = registerBlock(
-            "moon_lapis_lazuli_ore",
+    public static final DeferredBlock<Block> MOON_LAPIS_ORE  = registerBlock(
+            "moon_lapis_ore",
             properties -> new Block(properties),
             BlockBehaviour.Properties.of()
                     .strength(4f)
