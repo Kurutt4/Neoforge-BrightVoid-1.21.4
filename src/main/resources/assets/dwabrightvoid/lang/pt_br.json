@@ -1,0 +1,28 @@
+{
+  "item.dwabrightvoid.star_fragment": "Fragment Estelar",
+  "item.dwabrightvoid.magnetite": "Magnetita",
+
+
+
+
+
+
+
+  "block.dwabrightvoid.moon_dust": "Pó da Lua",
+  "block.dwabrightvoid.moon_stone": "Pedra da Lua",
+  "block.dwabrightvoid.meteor_block": "Meteoro",
+
+  "block.dwabrightvoid.moon_coal_ore": "Minério de Carvão Lunar",
+  "block.dwabrightvoid.moon_iron_ore": "Minério de Ferro Lunar",
+  "block.dwabrightvoid.moon_gold_ore": "Minério de Ouro Lunar",
+  "block.dwabrightvoid.moon_redstone_ore": "Minério de Redstone Lunar",
+  "block.dwabrightvoid.moon_diamond_ore": "Minério de Diamante Lunar",
+  "block.dwabrightvoid.moon_emerald_ore": "Minério de Esmeralda Lunar",
+  "block.dwabrightvoid.moon_lapis_ore": "Minério de Lapis Lunar",
+  "block.dwabrightvoid.moon_copper_ore": "Minério de Cobre Lunar",
+
+
+  "warning.brightvoid.oxygen":"CUIDADO: SEM OXIGÊNIO!",
+
+  "creativetab.brightvoid.brightvoid_items": "Dwa's Bright Void"
+}

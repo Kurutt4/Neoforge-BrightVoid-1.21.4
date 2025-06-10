@@ -1,6 +1,8 @@
 package net.dwa.brightvoid;
 
 import net.dwa.brightvoid.block.ModBlocks;
+import net.dwa.brightvoid.event.ModGravityHandler;
+import net.dwa.brightvoid.event.OxygenHandler;
 import net.dwa.brightvoid.item.ModCreativeModeTabs;
 import net.dwa.brightvoid.item.ModItems;
 import net.neoforged.api.distmarker.Dist;
@@ -28,6 +30,11 @@ public class BrightVoid {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+
+        NeoForge.EVENT_BUS.register(new ModGravityHandler());
+
+        NeoForge.EVENT_BUS.register(new OxygenHandler());
+
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -37,8 +44,6 @@ public class BrightVoid {
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
-
-
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
