@@ -5,9 +5,7 @@ import net.dwa.brightvoid.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -25,8 +23,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STAR_FRAGMENT);
 
 
+                        output.accept(ModBlocks.MOON_DUST.get());
                         output.accept(ModBlocks.MOON_STONE.get());
-                        output.accept(ModBlocks.MOON_DEEP_STONE.get());
                         output.accept(ModBlocks.MOON_COAL_ORE.get());
                         output.accept(ModBlocks.MOON_IRON_ORE.get());
                         output.accept(ModBlocks.MOON_COPPER_ORE.get());

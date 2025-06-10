@@ -27,8 +27,8 @@ public class ModModelProvider extends ModelProvider {
 
         /* BLOCKS */
         blockModels.createTrivialCube(ModBlocks.METEOR_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.MOON_DUST.get());
         blockModels.createTrivialCube(ModBlocks.MOON_STONE.get());
-        blockModels.createTrivialCube(ModBlocks.MOON_DEEP_STONE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_COAL_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_IRON_ORE.get());
         blockModels.createTrivialCube(ModBlocks.MOON_COPPER_ORE.get());

@@ -17,7 +17,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.MOON_DEEP_STONE.get())
+                .add(ModBlocks.MOON_STONE.get())
                 .add(ModBlocks.MOON_COAL_ORE.get())
                 .add(ModBlocks.MOON_IRON_ORE.get())
                 .add(ModBlocks.MOON_COPPER_ORE.get())

@@ -1,15 +1,11 @@
 package net.dwa.brightvoid.block;
 
 import net.dwa.brightvoid.BrightVoid;
-import net.dwa.brightvoid.item.ModItems;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Function;
@@ -19,15 +15,15 @@ import static net.dwa.brightvoid.item.ModItems.ITEMS;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(BrightVoid.MOD_ID);
 
-    public static final DeferredBlock<Block> MOON_STONE  = registerBlock(
-            "moon_stone",
+    public static final DeferredBlock<Block> MOON_DUST = registerBlock(
+            "moon_dust",
             properties -> new Block(properties),
             BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.SAND));
 
-    public static final DeferredBlock<Block> MOON_DEEP_STONE  = registerBlock(
-            "moon_deep_stone",
+    public static final DeferredBlock<Block> MOON_STONE = registerBlock(
+            "moon_stone",
             properties -> new Block(properties),
             BlockBehaviour.Properties.of()
                     .strength(4f)

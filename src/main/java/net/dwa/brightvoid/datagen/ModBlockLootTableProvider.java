@@ -28,8 +28,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropSelf(ModBlocks.MOON_DUST.get());
         dropSelf(ModBlocks.MOON_STONE.get());
-        dropSelf(ModBlocks.MOON_DEEP_STONE.get());
 
         add(ModBlocks.MOON_COAL_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.MOON_COAL_ORE.get(), Items.COAL, 1, 4));
